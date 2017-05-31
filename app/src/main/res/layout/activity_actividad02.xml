@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.example.usuario.virtual_fitness.Actividad02">
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="506dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/radioGroup"
+            android:text="Mi objetivo es:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="36dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Actividad Física"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perder peso" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="82dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="Elija el nivel de dificultad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="280dp"
+            android:layout_height="275dp"
+            android:layout_alignEnd="@+id/spinner2"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignRight="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_below="@+id/spinner2"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/fondo_pregunta">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
