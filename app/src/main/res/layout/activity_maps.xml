@@ -76,6 +76,18 @@
             app:backgroundTint="?attr/colorButtonNormal"
             app:srcCompat="@drawable/imgmap" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="13dp"
+            android:scaleType="centerInside"
+            app:backgroundTint="?attr/colorButtonNormal"
+            app:srcCompat="@drawable/ruta" />
 
     </RelativeLayout>
 
